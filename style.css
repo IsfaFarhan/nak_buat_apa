@@ -10,9 +10,6 @@
 
 body {
   background-color: #f2f2f2;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 h1 {
@@ -27,17 +24,67 @@ h1 {
   justify-content: space-between;
 }
 
+.tigasegi {
+  margin-left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #525252;
+}
+
+.subhead2 {
+  margin-top: 5px;
+  position: absolute;
+  z-index: +1;
+}
+
+.subhead3 {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #525252;
+  color: white;
+}
+
 .buang {
   cursor: pointer;
 }
+
+.buang2 {
+  cursor: pointer;
+  padding: 3px;
+  background-color: rgb(196, 72, 72);
+  border-radius: 5px;
+}
+
+.buang2:hover {
+  background-color: rgb(246, 83, 83);
+}
+
+.buang3 {
+  margin-top: 1px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.buang3:hover {
+  background-color: #696969;
+  border-radius: 5px;
+}
 .tentang {
   cursor: pointer;
+  text-decoration: none;
 }
+
+.tentang:visited {
+  color: black;
+}
+
 .title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 30px 50px 50px 50px;
 }
 .input {
   display: flex;
@@ -64,6 +111,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 20px;
   border-radius: 10px;

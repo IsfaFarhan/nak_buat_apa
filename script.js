@@ -103,3 +103,17 @@ function remove() {
 
   localStorage.clear(); // Clear the entire localStorage
 }
+
+/* function hideElement() {
+  let removeArea = document.getElementById("subhead2");
+  removeArea.style.display = "none";
+} */
+
+function hideElement() {
+  let removeArea = document.getElementById("subhead2");
+  if (removeArea.style.display === "none") {
+    removeArea.style.display = "block";
+  } else if (removeArea.style.display === "block") {
+    removeArea.style.display = "none";
+  }
+}

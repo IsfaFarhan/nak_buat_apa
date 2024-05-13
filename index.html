@@ -3,16 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="/img/Artboard 7.png" />
     <link rel="stylesheet" href="style.css" />
-    <title>nak buat apa?!</title>
+    <title>apa nak buat?!</title>
   </head>
   <body>
     <div class="head" id="head">
-      <p class="tentang">Baca Saya</p>
-      <div class="buang" onclick="remove()">Buang semua</div>
+      <p class="tentang"><a href="about.html" class="tentang">Baca Saya</a></p>
+      <div class="subhead">
+        <div class="buang" onclick="hideElement()">Padam semua</div>
+        <div id="subhead2" class="subhead2" style="display: none">
+          <div class="tigasegi"></div>
+          <div class="subhead3">
+            <div class="buang2" onclick="remove(), hideElement()">Ye padam</div>
+            <div class="buang3" onclick="hideElement()">Eh Tak!</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="title" id="title">
-      <h1>nak buat apa?!</h1>
+      <h1>apa nak buat?!</h1>
       <div class="input">
         <textarea type="text" id="textInput"></textarea>
         <button class="simpan" id="simpan" onclick="save2nd()">Simpan</button>
