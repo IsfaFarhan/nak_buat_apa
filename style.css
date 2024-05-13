@@ -153,6 +153,7 @@ button:active {
 @media (max-width: 548px) {
   textarea {
     width: 300px;
+    font-size: larger;
   }
 }
 
