@@ -94,20 +94,13 @@ function retrieve() {
 function remove() {
   let container = document.getElementById("container");
   Array.from(container.children).forEach(function (child) {
-    // Check if the child element has an ID
     if (child.id) {
-      // Remove the child element
       container.removeChild(child);
     }
   });
 
-  localStorage.clear(); // Clear the entire localStorage
+  localStorage.clear();
 }
-
-/* function hideElement() {
-  let removeArea = document.getElementById("subhead2");
-  removeArea.style.display = "none";
-} */
 
 function hideElement() {
   let removeArea = document.getElementById("subhead2");
